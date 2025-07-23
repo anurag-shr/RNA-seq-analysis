@@ -11,3 +11,8 @@ Encoding: UTF-8
 
 RnwWeave: Sweave
 LaTeX: pdfLaTeX
+
+QuitChildProcessesOnExit: Yes
+DisableExecuteRprofile: Yes
+
+ProjectName: RNA-seq-analysis
