@@ -1,0 +1,1565 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Yemin</First><Last>Lan</Last></Person>
+    <Organization>University of Pennsylvania</Organization>
+    <Address>
+      <Line>3400 Civic Center Blvd</Line>
+      <City>Philadelphia</City>
+      <State>PA</State>
+      <Zip-Code>19104</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Raffaella</First><Last>Nativio</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Berger</First><Last>Shelley</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL18573">
+    <Status database="GEO">
+      <Submission-Date>2014-04-15</Submission-Date>
+      <Release-Date>2014-04-15</Release-Date>
+      <Last-Update-Date>2019-03-26</Last-Update-Date>
+    </Status>
+    <Title>Illumina NextSeq 500 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL18573</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM4656348">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>13-11T-Old</Title>
+    <Accession database="GEO">GSM4656348</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+old
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458473" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673669" />
+  </Sample>
+
+  <Sample iid="GSM4656349">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>15-13T-Old</Title>
+    <Accession database="GEO">GSM4656349</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+old
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458472" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673670" />
+  </Sample>
+
+  <Sample iid="GSM4656350">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>20-1T-AD</Title>
+    <Accession database="GEO">GSM4656350</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+Alzheimer's disease
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458470" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673671" />
+  </Sample>
+
+  <Sample iid="GSM4656351">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>16-14T-Old</Title>
+    <Accession database="GEO">GSM4656351</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+old
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458469" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673672" />
+  </Sample>
+
+  <Sample iid="GSM4656352">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>3-17T-Young</Title>
+    <Accession database="GEO">GSM4656352</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+young
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458468" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673673" />
+  </Sample>
+
+  <Sample iid="GSM4656353">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>5-18T-Young</Title>
+    <Accession database="GEO">GSM4656353</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+young
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458467" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673674" />
+  </Sample>
+
+  <Sample iid="GSM4656354">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>7-19T-Young</Title>
+    <Accession database="GEO">GSM4656354</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+young
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458466" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673675" />
+  </Sample>
+
+  <Sample iid="GSM4656355">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>21-1A-AD</Title>
+    <Accession database="GEO">GSM4656355</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+Alzheimer's disease
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458465" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673676" />
+  </Sample>
+
+  <Sample iid="GSM4656356">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>23-2A-AD</Title>
+    <Accession database="GEO">GSM4656356</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+Alzheimer's disease
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458464" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673677" />
+  </Sample>
+
+  <Sample iid="GSM4656357">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>26-3A-AD</Title>
+    <Accession database="GEO">GSM4656357</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+Alzheimer's disease
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673678" />
+  </Sample>
+
+  <Sample iid="GSM4656358">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>27-5A-AD</Title>
+    <Accession database="GEO">GSM4656358</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+Alzheimer's disease
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458481" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673679" />
+  </Sample>
+
+  <Sample iid="GSM4656359">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>12-6A-Old</Title>
+    <Accession database="GEO">GSM4656359</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+old
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458480" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673680" />
+  </Sample>
+
+  <Sample iid="GSM4656360">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>14-7A-Old</Title>
+    <Accession database="GEO">GSM4656360</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+old
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458479" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673681" />
+  </Sample>
+
+  <Sample iid="GSM4656361">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>10-8A-Old</Title>
+    <Accession database="GEO">GSM4656361</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+old
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458478" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673682" />
+  </Sample>
+
+  <Sample iid="GSM4656362">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>22-2T-AD</Title>
+    <Accession database="GEO">GSM4656362</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+Alzheimer's disease
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458477" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673683" />
+  </Sample>
+
+  <Sample iid="GSM4656363">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>17-9A-Old</Title>
+    <Accession database="GEO">GSM4656363</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+old
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458476" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673684" />
+  </Sample>
+
+  <Sample iid="GSM4656364">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>18-10A-Old</Title>
+    <Accession database="GEO">GSM4656364</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+old
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458475" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673685" />
+  </Sample>
+
+  <Sample iid="GSM4656365">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>19-11A-Old</Title>
+    <Accession database="GEO">GSM4656365</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+old
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458485" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673686" />
+  </Sample>
+
+  <Sample iid="GSM4656366">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>2-12A-Young</Title>
+    <Accession database="GEO">GSM4656366</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+young
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458484" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673687" />
+  </Sample>
+
+  <Sample iid="GSM4656367">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>4-13A-Young</Title>
+    <Accession database="GEO">GSM4656367</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+young
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458483" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673688" />
+  </Sample>
+
+  <Sample iid="GSM4656368">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>6-14A-Young</Title>
+    <Accession database="GEO">GSM4656368</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+young
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458490" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673689" />
+  </Sample>
+
+  <Sample iid="GSM4656369">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>8-15A-Young</Title>
+    <Accession database="GEO">GSM4656369</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+young
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458486" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673690" />
+  </Sample>
+
+  <Sample iid="GSM4656370">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>9-16A-Young</Title>
+    <Accession database="GEO">GSM4656370</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+young
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458498" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673691" />
+  </Sample>
+
+  <Sample iid="GSM4656371">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>24-3T-AD</Title>
+    <Accession database="GEO">GSM4656371</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+Alzheimer's disease
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458496" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673692" />
+  </Sample>
+
+  <Sample iid="GSM4656372">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>25-5T-AD</Title>
+    <Accession database="GEO">GSM4656372</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+Alzheimer's disease
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458495" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673693" />
+  </Sample>
+
+  <Sample iid="GSM4656373">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>29-6T-AD</Title>
+    <Accession database="GEO">GSM4656373</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+Alzheimer's disease
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458494" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673694" />
+  </Sample>
+
+  <Sample iid="GSM4656374">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>31-7T-AD</Title>
+    <Accession database="GEO">GSM4656374</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+Alzheimer's disease
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458493" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673695" />
+  </Sample>
+
+  <Sample iid="GSM4656375">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>28-8T-AD</Title>
+    <Accession database="GEO">GSM4656375</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+Alzheimer's disease
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458501" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673696" />
+  </Sample>
+
+  <Sample iid="GSM4656376">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>30-9T-AD</Title>
+    <Accession database="GEO">GSM4656376</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+Alzheimer's disease
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458500" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673697" />
+  </Sample>
+
+  <Sample iid="GSM4656377">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-13</Last-Update-Date>
+    </Status>
+    <Title>11-10T-Old</Title>
+    <Accession database="GEO">GSM4656377</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Frozen postmortem brain tissue</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lateral temporal lobe
+      </Characteristics>
+      <Characteristics tag="disease state">
+old
+      </Characteristics>
+      <Biomaterial-Provider>CNDR brain bank (Penn)
+</Biomaterial-Provider>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA isolated from tissue was spiked with the ERCC Spike-In Mix (equal quantities) and subject to ribosomal RNA removal and sequencing library preparation.
+Libraries were sequenced (75 bp, single-end) on a NextSeq 550 platform (Illumina) in accordance with the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+RNA-seq reads (including ERCC spike-in controls) were aligned to the human reference genome (assembly GRCh37.75/hg19 concatenated with the sequence of the ERCC transcripts) using STAR with default parameters. Only alignments with mapping score MAPQ of 10 and above were retained.
+Read counts for the ERCC spike-in transcripts were counted using samtools idxstat function. FeatureCounts was used to generate a matrix of mapped fragments per RefSeq annotated gene.
+Genome_build: hg19
+Supplementary_files_format_and_content: read count per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN15458499" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX8673698" />
+  </Sample>
+
+  <Series iid="GSE153873">
+    <Status database="GEO">
+      <Submission-Date>2020-07-06</Submission-Date>
+      <Release-Date>2020-07-07</Release-Date>
+      <Last-Update-Date>2020-10-30</Last-Update-Date>
+    </Status>
+    <Title>An integrated multi-omics approach identifies epigenetic alterations associated with Alzheimer’s disease (RNA-seq with ERCC spike-in) [RNA-Seq]</Title>
+    <Accession database="GEO">GSE153873</Accession>
+    <Pubmed-ID>32989324</Pubmed-ID>
+    <Summary>
+We report the ERCC spike-in controlled RNA-seq in human hippocampus subject to normal aging and Alzheimer's disease.
+    </Summary>
+    <Overall-Design>
+ERCC spike-in controlled RNA-seq in postmortal lateral temporal lobe of Alzheimer's disease affected brains (AD), control Old (Old) and control Young (Young).
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib1" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM4656348" />
+    <Sample-Ref ref="GSM4656349" />
+    <Sample-Ref ref="GSM4656350" />
+    <Sample-Ref ref="GSM4656351" />
+    <Sample-Ref ref="GSM4656352" />
+    <Sample-Ref ref="GSM4656353" />
+    <Sample-Ref ref="GSM4656354" />
+    <Sample-Ref ref="GSM4656355" />
+    <Sample-Ref ref="GSM4656356" />
+    <Sample-Ref ref="GSM4656357" />
+    <Sample-Ref ref="GSM4656358" />
+    <Sample-Ref ref="GSM4656359" />
+    <Sample-Ref ref="GSM4656360" />
+    <Sample-Ref ref="GSM4656361" />
+    <Sample-Ref ref="GSM4656362" />
+    <Sample-Ref ref="GSM4656363" />
+    <Sample-Ref ref="GSM4656364" />
+    <Sample-Ref ref="GSM4656365" />
+    <Sample-Ref ref="GSM4656366" />
+    <Sample-Ref ref="GSM4656367" />
+    <Sample-Ref ref="GSM4656368" />
+    <Sample-Ref ref="GSM4656369" />
+    <Sample-Ref ref="GSM4656370" />
+    <Sample-Ref ref="GSM4656371" />
+    <Sample-Ref ref="GSM4656372" />
+    <Sample-Ref ref="GSM4656373" />
+    <Sample-Ref ref="GSM4656374" />
+    <Sample-Ref ref="GSM4656375" />
+    <Sample-Ref ref="GSM4656376" />
+    <Sample-Ref ref="GSM4656377" />
+    <Supplementary-Data type="XLSX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE153nnn/GSE153873/suppl/GSE153873_AD.vs.Old_diff.genes.xlsx
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE153nnn/GSE153873/suppl/GSE153873_summary_count.ercc.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE153nnn/GSE153873/suppl/GSE153873_summary_count.star.txt.gz
+    </Supplementary-Data>
+    <Relation type="SubSeries of" target="GSE153875" />
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA644383" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRP270338" />
+  </Series>
+
+</MINiML>
