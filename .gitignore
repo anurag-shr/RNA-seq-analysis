@@ -6,3 +6,9 @@
 .httr-oauth
 .DS_Store
 .quarto
+.RDataTmp
+.RDataTmp1
+DEGs_AD_vs_Old.csv
+data/DEG_results_AD_vs_Old.csv
+data/Environment.RData
+data/sample_info.csv
